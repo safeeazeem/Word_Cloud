@@ -17,7 +17,8 @@ my_file = os.path.join(THIS_FOLDER, file_1)
 
 
 '''
-    -Add custom words to the remove list
+    To remove additional words, just add them to the remove list
+    The frequency dictionary stores the frequency of words.
 '''
 
 def Generate_Word_Cloud(file):
