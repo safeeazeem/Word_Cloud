@@ -5,16 +5,20 @@ import string
 import re
 import gensim
 all_stopwords = gensim.parsing.preprocessing.STOPWORDS
-from collections import Counter
 from matplotlib import pyplot as plt
 import wordcloud
 
 
+#Change the name of the file_1 to the text file you want to generate the word cloud for.
 file_1 = 'Treasure_island.txt'
 
 THIS_FOLDER = os.path.dirname(os.path.abspath(__file__))
 my_file = os.path.join(THIS_FOLDER, file_1)
 
+
+'''
+    -Add custom words to the remove list
+'''
 
 def Generate_Word_Cloud(file):
     text = open(file,encoding="utf8").read()
